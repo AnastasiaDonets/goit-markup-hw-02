@@ -10,10 +10,12 @@
 --secondary-logo-color: #000000;
 
 /* Background colors */
---main-background-color: #F5F5F5;
+--main-background-color: #FFFFFF;
 --accent-background-color: #2196F3;
 --secondary-background-color: #2F303A;
---third-bacground-color: #F5F4FA;
+--third-background-color: #F5F4FA;
+--hero-btn-background: #188CE8;
+/* --forth-background-color: #F5F5F5; */
 
 /* Others */
 }
@@ -23,7 +25,6 @@
     font-family: var(--main-font);
     background-color: var(--main-background-color);
     color: var(--main-text-color);
-
 }
 
 /* --------------
@@ -53,7 +54,6 @@
 
 /* Site nav */
 .header {
-    font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -83,7 +83,6 @@
     background-color: var(--secondary-background-color);
 }
 .hero-title {
-    font-family: inherit;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -106,7 +105,10 @@ letter-spacing: 0.06em;
 border: 0;
 cursor: pointer;
 }
-
+.button:hover,
+.button:focus {
+    background-color: #188CE8;
+}
 /* Features */
 .visually-hidden {
   position: absolute;
@@ -121,7 +123,6 @@ cursor: pointer;
   margin: -1px;
 }
 .features-list .title {
-    font-family: inherit;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -130,7 +131,6 @@ cursor: pointer;
 }
 
 .features-list .desc {
-    font-family: inherit;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -139,7 +139,6 @@ cursor: pointer;
 
 /* About */
 .section-title {
-    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -150,8 +149,7 @@ cursor: pointer;
 
 /* Team */
 .team-section {
-    background-color: var(--third-bacground-color);
-    font-family: inherit;
+    background-color: var(--third-background-color);
     font-size: 16px;
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
@@ -206,8 +204,8 @@ cursor: pointer;
 
    /* Filter button */
    .filter-btn{
-    background-color: var(--accent-background-color);
-    color: var(--secondary-accent-color);
+    background-color: var(--third-background-color);
+    color: var(--main-text-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -217,10 +215,14 @@ cursor: pointer;
     border: 0;
     cursor: pointer;
    }
+   .filter-btn:hover,
+   .filter-btn:focus {
+    background-color: var(--acent-text-color);
+    color: var(--secondary-accent-color);
+   }
 
    /* Work list */
    .work-title {
-    font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
@@ -228,7 +230,6 @@ cursor: pointer;
     color: var(--main-text-color);
    }
    .work-desc{
-    font-family: inherit;
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
